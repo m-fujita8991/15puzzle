@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="https://liveinhope.biz/wp-content/uploads/2017/06/15puzzle.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@900&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>15パズル</title>
+</head>
+
+<body id="back">
+    <div id="tekazudiv">
+        <h1 id = user></h1>
+        <h1>手数</h1>
+        <table border=7 cellspacing=5 cellpadding=3 width=100 align=center id="tekazu" visibility="hidden">
+            <tr>
+                <td bgcolor=white align=center>
+                    <font color=black size=6 id="count">
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="resetdiv">
+        <button id="reset">reset</button>
+        <button id="end">end</button>
+    </div>
+
+    <table id="puzzle">
+        <tr>
+            <td id="cell_0"><button>1</button></td>
+            <td id="cell_1"><button>2</button></td>
+            <td id="cell_2"><button>3</button></td>
+            <td id="cell_3"><button>4</button></td>
+        </tr>
+        <tr>
+            <td id="cell_4"><button>5</button></td>
+            <td id="cell_5"><button>6</button></td>
+            <td id="cell_6"><button>7</button></td>
+            <td id="cell_7"><button>8</button></td>
+        </tr>
+        <tr>
+            <td id="cell_8"><button>9</button></td>
+            <td id="cell_9"><button>10</button></td>
+            <td id="cell_10"><button>11</button></td>
+            <td id="cell_11"><button>12</button></td>
+        </tr>
+        <tr>
+            <td id="cell_12"><button>13</button></td>
+            <td id="cell_13"><button>14</button></td>
+            <td id="cell_14"><button>15</button></td>
+            <td id="cell_15"><br></td>
+        </tr>
+    </table>
+
+    <div id="finish">
+
+    </div>
+</body>
+
+<script type="text/javascript" src="https://liveinhope.biz/wp-content/uploads/2017/06/15puzzle.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/ncmb.min.js" charset="utf-8"></script>
+<script>
+    var ncmb = new NCMB("014ae9cf794af2ee85b3e14d9de2867de1cf0239721591c3fd88d8e5ea8c72c2", "85fe44766d61e9bab91b551823ccdea422c5cccf9e64e41ba402f60da5e33c7c");
+</script>
+<script src="js/bubbly-bg.js"></script>
+<script>bubbly({
+        animate: true, // default is true
+        blur: 3, // default is 4
+        bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`, // default is () => `hsla(0, 0%, 100%, ${r() * 0.1})`)
+        bubbles: 150, // default is Math.floor((canvas.width + canvas.height) * 0.02);
+        canvas: document.querySelector("#background"), // default is created and attached
+        colorStart: "#a9ceec", // default is blue-ish
+        colorStop: "#a9ceec",// default is blue-ish
+        compose: "lighter", // default is "lighter"
+        shadowColor: "#0ff", // default is #fff
+        angleFunc: () => Math.random() * Math.PI * 2, // default is this
+        velocityFunc: () => 0.1 + Math.random() * 0.5, // default is this
+        radiusFunc: () => 4 + Math.random() * 25 // default is 4 + Math.random() * width / 25
+    });</script>

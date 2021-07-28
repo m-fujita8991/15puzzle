@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+span {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+p {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}

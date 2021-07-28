@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="css/score.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@900&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>15パズルランキング</title>
+    </head>
+
+    <body>
+        <h1>🏆ユーザーランキング🏆</h1>
+        <span id="ranking"></span>
+        <p>※上位10名まで表示されます</p>
+        <h2><a href="title.html">タイトルに戻る</a></h2>
+        
+    </body>
+
+    <script type="text/javascript" src="js/score.js"></script>
+    <script type="text/javascript" src="js/ncmb.min.js" charset="utf-8"></script>
+    <script>
+        var ncmb = new NCMB("014ae9cf794af2ee85b3e14d9de2867de1cf0239721591c3fd88d8e5ea8c72c2","85fe44766d61e9bab91b551823ccdea422c5cccf9e64e41ba402f60da5e33c7c");
+    </script>
+    <script src="js/bubbly-bg.js"></script>
+    <script>bubbly({
+            animate: true, // default is true
+            blur: 3, // default is 4
+            bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`, // default is () => `hsla(0, 0%, 100%, ${r() * 0.1})`)
+            bubbles: 150, // default is Math.floor((canvas.width + canvas.height) * 0.02);
+            canvas: document.querySelector("#background"), // default is created and attached
+            colorStart: "#a9ceec", // default is blue-ish
+            colorStop: "#a9ceec",// default is blue-ish
+            compose: "lighter", // default is "lighter"
+            shadowColor: "#0ff", // default is #fff
+            angleFunc: () => Math.random() * Math.PI * 2, // default is this
+            velocityFunc: () => 0.1 + Math.random() * 0.5, // default is this
+            radiusFunc: () => 4 + Math.random() * 25 // default is 4 + Math.random() * width / 25
+        });</script>
+
+</html>

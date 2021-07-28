@@ -1,0 +1,47 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@900&family=RocknRoll+One&display=swap" rel="stylesheet">
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>15パズルへようこそ</title>
+    <link rel="stylesheet" href="css/title.css">
+</head>
+
+<body>
+    <div id="titleimage">
+        <img src="image/title.png" alt="タイトル画像">
+    </div>
+    <div id="mainimage">
+        <img src="image/15パズル.jpg" width="380" height="380">
+    </div>
+    <div class="seni">
+        <button id="start">play</button>
+        <button id="score">score</button>
+    </div>
+    <div class="text">
+        <h3>あそびかた</h3>
+        <p>空白のマス目の隣の数字タイルをクリック（タップ）して、位置を変えて行きます。</p>
+        <p>最終的に、上図のように1～15まで順番に並べられたらクリアとなります。</p>
+    </div>
+</body>
+<script src="js/title.js"></script>
+<script src="js/bubbly-bg.js"></script>
+<script>bubbly({
+        animate: true, // default is true
+        blur: 3, // default is 4
+        bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`, // default is () => `hsla(0, 0%, 100%, ${r() * 0.1})`)
+        bubbles: 150, // default is Math.floor((canvas.width + canvas.height) * 0.02);
+        canvas: document.querySelector("#background"), // default is created and attached
+        colorStart: "#a9ceec", // default is blue-ish
+        colorStop: "#a9ceec",// default is blue-ish
+        compose: "lighter", // default is "lighter"
+        shadowColor: "#0ff", // default is #fff
+        angleFunc: () => Math.random() * Math.PI * 2, // default is this
+        velocityFunc: () => 0.1 + Math.random() * 0.5, // default is this
+        radiusFunc: () => 4 + Math.random() * 25 // default is 4 + Math.random() * width / 25
+    });</script>
+
+</html>

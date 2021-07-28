@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Frijole');
+
+
+body {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+td {
+    background-color: white;
+}
+
+#tekazu{
+    visibility: hidden;
+}
+
+#resetdiv{
+    text-align: center;    
+}
+ 
+#reset{
+    font-family: 'Frijole', cursive;
+    font-size: 40px;
+}
+
+#end{
+    font-family: 'Frijole', cursive;
+    font-size: 40px;
+}
+ 
+#puzzle{
+    margin: 20px auto;
+}
+ 
+#puzzle button{
+    font-family: 'Frijole', cursive;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+ 
+#finish{
+    font-family: 'Frijole', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+#tekazudiv{
+    text-align: center;
+}
